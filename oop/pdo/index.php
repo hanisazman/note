@@ -10,6 +10,12 @@ include 'includes/class-autoload.inc.php';
         <title>Document</title>
     </head>
     <body>
-        
+        <?php
+            $testObj = new Test();
+            
+            $testObj->getUsers();
+            $testObj->getUsersStmt("Timmy", "Doe");
+            $testObj->setUsersStmt("Alice", "Doe", "1997-01-28");
+        ?>
     </body>
 </html>
